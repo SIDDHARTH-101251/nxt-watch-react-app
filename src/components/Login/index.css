@@ -1,0 +1,131 @@
+.login-form-container {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0 solid;
+  border-radius: 12px;
+  box-shadow: 0px 4px 16px 0px #cdcdcd;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #7e8993;
+  font-weight: bold;
+}
+
+.show-password-label {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #0d1625;
+  margin-left: 4px;
+}
+
+.form-input-element {
+  border: 0.5px solid #7e8993;
+  border-radius: 4px;
+  height: 38px;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 8px 0 24px 0;
+  color: #7e8993;
+  outline: none;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 24px 0;
+}
+
+.login-button {
+  height: 38px;
+  border: 0 solid;
+  border-radius: 6px;
+  background-color: #3b82f6;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form {
+    width: 30%;
+  }
+}
+
+/* dark page styling */
+.login-form-container-dark {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #212121;
+}
+
+.login-form-dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0 solid;
+  border-radius: 12px;
+  /* box-shadow: 0px 4px 16px 0px #cdcdcd; */
+  width: 100%;
+  padding: 20px;
+  background-color: #0f0f0f;
+}
+
+.form-label-dark {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.form-input-element-dark {
+  border: 1px solid #1e293b;
+  border-radius: 4px;
+  height: 38px;
+  padding: 8px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  margin: 8px 0 24px 0;
+  color: #7e8993;
+  outline: none;
+  background-color: transparent;
+}
+
+.show-password-label-dark {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+  margin-left: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-form-dark {
+    width: 30%;
+  }
+}
