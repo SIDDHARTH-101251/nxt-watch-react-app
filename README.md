@@ -3,6 +3,7 @@ In this assignment let's build an **Nxt Watch** by applying the concepts we have
 ### Refer to videos below:
 
 **Success View** <br/>
+<img src="https://res.cloudinary.com/dutyjapri/image/upload/v1735746032/1_g01lxr.png" />
 
 <div style="text-align: center;">
      <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
@@ -12,6 +13,7 @@ In this assignment let's build an **Nxt Watch** by applying the concepts we have
 <br/>
 
 **Failure View** <br/>
+<img src="https://res.cloudinary.com/dutyjapri/image/upload/v1735746044/2_bocxbi.png" />
 
 <div style="text-align: center;">
     <video style="max-width:80%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
