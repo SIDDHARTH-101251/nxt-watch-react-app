@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import Cookies from 'js-cookie'
+import {Redirect} from 'react-router-dom'
 import AppContex from '../../context/AppContext'
 import './index.css'
 
@@ -17,20 +18,32 @@ class Login extends Component {
     const options = {
       method: 'POST',
       body: JSON.stringify({username, password}),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      // mode: 'no-cors',
     }
     const url = 'https://apis.ccbp.in/login'
 
     try {
-      await fetch(url, options)
-      console.log(
-        'Request sent, but unable to verify the response due to no-cors mode.',
-      )
+      const response = await fetch(url, options)
+
+      if (response.ok) {
+        const data = await response.json()
+        const jwtToken = data.jwt_token
+        Cookies.set('jwtToken', jwtToken, {
+          expires: 1, // Expires in 1 day
+        })
+        const {history} = this.props
+        history.replace('/')
+      } else {
+        const data = await response.json()
+        const errMsg = data.error_msg // Assuming the error message key is `error_msg`
+        this.setState({
+          errMsg,
+        })
+      }
     } catch (error) {
       console.error('Network error:', error)
+      this.setState({
+        errMsg: 'Something went wrong. Please try again later.',
+      })
     }
   }
 
@@ -53,6 +66,10 @@ class Login extends Component {
   }
 
   render() {
+    const jwtToken = Cookies.get('jwtToken')
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
     return (
       <AppContex.Consumer>
         {value => {
@@ -118,7 +135,11 @@ class Login extends Component {
                 <button type="submit" className="login-button">
                   Login
                 </button>
-                {errMsg.length !== 0 ? <p>*{errMsg}</p> : ''}
+                {errMsg.length !== 0 ? (
+                  <p className="error-message">*{errMsg}</p>
+                ) : (
+                  ''
+                )}
               </form>
             </div>
           )

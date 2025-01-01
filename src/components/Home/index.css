@@ -1,0 +1,124 @@
+.home-page-main-container-large-device {
+  display: flex;
+  margin-top: 8vh;
+}
+
+.sidebar {
+  width: 20%;
+  height: 92vh;
+}
+
+.content-container {
+  width: 80%;
+}
+
+.small-device-home-page-content-container {
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.small-device-home-page-content-container-dark {
+  background-color: #181818;
+  min-height: 100vh;
+}
+
+.search-element-container {
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-element-container {
+  width: 80%;
+}
+
+.search-icon-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #94a3b8;
+  height: 38px;
+}
+
+.search-icon-container-dark {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #94a3b8;
+  height: 38px;
+  background-color: #303031;
+}
+
+.search-input-style {
+  width: 100%;
+  border: 1px solid #94a3b8;
+  outline: none;
+  background-color: #fff;
+  font-family: 'Roboto';
+  font-size: 16px;
+  height: 38px;
+  padding: 5px;
+}
+
+.search-input-style-dark {
+  width: 100%;
+  border: 1px solid #94a3b8;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Roboto';
+  color: #fff;
+  font-size: 16px;
+  height: 38px;
+  padding: 5px;
+}
+
+.search-icon-style-dark {
+  color: #475569;
+}
+
+.content-video-container-light {
+  padding: 12px;
+  background-color: #f9f9f9;
+  min-height: 92vh;
+}
+
+.content-video-container-dark {
+  padding: 12px;
+  background-color: #181818;
+  min-height: 92vh;
+}
+
+@media screen and (min-width: 768px) {
+  .videos-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px;
+  }
+
+  .search-input-element-container {
+    width: 50%;
+  }
+
+  .small-device-home-page-content-container-dark {
+    margin-top: 54px;
+  }
+
+  .small-device-home-page-content-container {
+    margin-top: 54px;
+  }
+}
+
+.loader-container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}

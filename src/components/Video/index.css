@@ -1,0 +1,105 @@
+.videos-page-main-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.react-player {
+  width: 100% !important;
+  height: 260px !important;
+}
+
+.video-profile-image {
+  width: 50px;
+  margin-right: 16px;
+}
+
+.video-channel-details-container {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.video-title-style-light {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #181818;
+}
+
+.video-title-style-dark {
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: #fff;
+}
+
+.video-details-container-1 {
+  padding: 12px;
+}
+
+.video-span-style-1 {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #64748b;
+  margin-right: 20px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.pos-1 {
+  display: flex;
+  align-items: center;
+}
+
+.pos-2 {
+  display: flex;
+  align-items: center;
+}
+
+.video-span-style-2 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #64748b;
+  margin-right: 20px;
+}
+
+.video-like-dislike-icon {
+  color: #64748b;
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.pos-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .pos-3 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .react-player {
+    height: 500px !important;
+  }
+
+  .videos-page-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.like-dislike-button-style {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.color-blue {
+  color: #2563eb;
+}
+
+.color-black {
+  color: #64748b;
+}

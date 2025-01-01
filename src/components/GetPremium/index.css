@@ -1,0 +1,78 @@
+.logo-get-premium-section {
+  width: 120px;
+  height: 36px;
+}
+
+.get-premium-section {
+  padding: 12px 30px 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+  background-size: cover;
+}
+
+.get-premium-para {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #132238;
+}
+
+.get-it-now-button {
+  height: 38px;
+  width: 120px;
+  border: 1px solid #132238;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #132238;
+  background-color: transparent;
+}
+
+.get-premium-text-container {
+  width: 72%;
+}
+
+.cross-icon-container {
+  width: 13%;
+}
+
+@media screen and (min-width: 1024px) {
+  .get-premium-section {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/nxt-watch-banner-bg.png');
+    background-size: cover;
+    height: 300px;
+    margin-top: 0;
+  }
+
+  .cross-icon-container {
+    width: 5%;
+  }
+
+  .get-premium-text-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.close-button-style {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
+.close-icon {
+  height: 30px;
+  width: 30px;
+}
+
+.temp-div {
+  height: 8vh;
+}
+
+@media screen and (min-width: 768px) {
+  .temp-div {
+    height: 0;
+  }
+}

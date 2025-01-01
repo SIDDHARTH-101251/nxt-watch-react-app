@@ -1,0 +1,89 @@
+.video-container {
+  margin-bottom: 12px;
+}
+
+.thumbnail {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.video-details-container {
+  display: flex;
+}
+
+.profile-image-container {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image-video-section {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+}
+
+.video-text-container {
+  width: 80%;
+}
+
+.video-title {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video-title-dark {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.video-stats-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.video-stats-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #475569;
+}
+
+.dot-icon {
+  margin: 0 3px 0 3px;
+  color: #475569;
+}
+
+@media screen and (min-width: 768px) {
+  .video-container {
+    width: 49%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .video-container {
+    width: 32%;
+  }
+}
+
+.search-button-style {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 0 solid;
+  outline: none;
+}
+
+.video-button-style {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}

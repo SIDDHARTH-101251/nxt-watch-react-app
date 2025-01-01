@@ -1,0 +1,250 @@
+.navbar,
+.navbar-dark {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 12px;
+  height: 8vh;
+  width: 100%; /* Ensures the navbar spans the full width of the viewport */
+  position: fixed; /* Fixes the navbar at the top of the viewport */
+  top: 0; /* Aligns the navbar to the top of the viewport */
+  left: 0; /* Aligns the navbar to the left of the viewport */
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  transition:
+    background-color 1s ease,
+    color 1s ease; /* Added transition for smooth theme switching */
+  overflow: hidden;
+}
+
+.navbar {
+  background-color: #fff; /* Light theme color */
+}
+
+.navbar-dark {
+  background-color: #212121; /* Dark theme color */
+}
+
+.logo-button {
+  background-color: transparent;
+  border: 0 solid;
+  outline: none;
+}
+
+.website-logo-nav-bar-sm {
+  width: 100px;
+  height: 28px;
+}
+
+.nav-options-container-sm {
+  width: 35%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-button {
+  background-color: transparent;
+  border: 0 solid;
+  outline: none;
+}
+
+.nav-icon {
+  height: 25px;
+  width: 25px;
+}
+
+.nav-icon-dark {
+  height: 25px;
+  width: 25px;
+  color: #fff;
+}
+
+.profile-image-large-device {
+  height: 28px;
+  width: 28px;
+}
+
+.logout-button-large-device {
+  background-color: transparent;
+  border: 1px solid #3b82f6;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #3b82f6;
+  border-radius: 3px;
+  outline: none;
+  width: 100px;
+  height: 36px;
+}
+
+.logout-button-large-device-dark {
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #fff;
+  border-radius: 3px;
+  outline: none;
+  width: 100px;
+  height: 36px;
+}
+
+.popup-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  border: 0 solid;
+  border-radius: 8px;
+  background-color: #23231d;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar,
+  .navbar-dark {
+    padding: 12px 5% 12px 5%;
+  }
+
+  .popup-content {
+    width: 20%;
+    height: 200px;
+    border: 0 solid;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23231d;
+  }
+}
+
+.logout-button-small-device {
+  background-color: transparent;
+  border: 0 solid;
+  outline: none;
+}
+
+.popup-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trigger-button {
+  height: 36px;
+  width: 90px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-family: 'Roboto';
+  color: #fff;
+}
+
+.confirm-button {
+  height: 36px;
+  width: 90px;
+  background-color: #3b82f6;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #ffffff;
+  border: 0 solid;
+  border-radius: 3px;
+  outline: none;
+}
+
+.popup-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .popup-button-container {
+    width: 100%;
+  }
+
+  .popup-text {
+    text-align: left;
+    width: 100%;
+    color: #fff;
+  }
+}
+
+.popup-content-large {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.nav-items-small-device {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  flex-direction: column;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.nav-items-small-device-dark {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  flex-direction: column;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #313131;
+  margin-top: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.height {
+  max-height: 0px;
+}
+
+.height-max {
+  max-width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-items-small-device {
+    display: none;
+  }
+
+  .nav-items-small-device-dark {
+    display: none;
+  }
+}
+
+.hamburger-button {
+  background-color: transparent;
+  border: 0 solid;
+}
+
+.hamburger-option-dark {
+  background-color: transparent;
+  border: 0 solid;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #fff;
+}
+
+.hamburger-option-light {
+  background-color: transparent;
+  border: 0 solid;
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #000;
+}

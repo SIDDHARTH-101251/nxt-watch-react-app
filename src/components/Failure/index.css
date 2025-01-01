@@ -1,0 +1,40 @@
+.failure-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-container img {
+  width: 30%;
+}
+
+.heading-style-failure-light {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #181818;
+}
+
+.heading-style-failure-dark {
+  font-family: 'Roboto';
+  font-size: 24px;
+  color: #fff;
+}
+
+.failure-container p {
+  font-family: 'Roboto';
+  font-size: 17px;
+  color: #94a3b8;
+}
+
+.retry-button-failure-page {
+  width: 100px;
+  height: 38px;
+  color: #fff;
+  background-color: #4f46e5;
+  border: 0 solid;
+  border-radius: 8px;
+  font-family: 'Roboto';
+  outline: none;
+}
